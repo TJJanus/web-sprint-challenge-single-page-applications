@@ -119,7 +119,9 @@ const PizzaForm = (props) => {
         </select>
             </label>
     <br></br>
-            <label htmlFor='toppings'>Choose up to 5 special toppings.</label>
+    <br></br>
+            <label htmlFor='toppings'>Choose up to 4 special toppings.</label>
+            <br></br>
             <br></br>
 
             <label htmlFor='sausage'>
@@ -162,8 +164,8 @@ const PizzaForm = (props) => {
              />
             </label>
             <br></br>
-            <label htmlFor='specialInstructions'>
-            Special Instructions   
+            <label htmlFor='specialInstructions'><br></br>
+            Special Instructions   <br></br>
              <textarea 
                 name='specialInstructions'
                 value={formValues.specialInstructions}
@@ -171,7 +173,7 @@ const PizzaForm = (props) => {
              />
             </label>
             <br></br>
-            <button>Add to order</button>
+            <button name='fun'>Add to order</button>
             <Link to='/'>
             <button>Back to Home</button>
             </Link>

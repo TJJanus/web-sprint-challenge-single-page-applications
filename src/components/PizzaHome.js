@@ -6,7 +6,7 @@ import * as yup from 'yup';
 // Name Validity
 
 const formSchema = yup.object().shape({
-    name: yup.string().required('Enter Name please'),
+    name: yup.string().min(2).required('Enter Name please'),
     email: yup.string().email().required("valid email please"),
 })
 
